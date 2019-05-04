@@ -1,0 +1,70 @@
+JokeServer:
+
+loop-depaulsecure-235-12:JokeServer mohammedabdulkadir$ java JokeServer
+Mohammed's Joke Server 1.8 starting up, listening at port 4545.
+Joke is funny eh?
+Joke is funny eh?
+Joke is funny eh?
+Joke is funny eh?
+PROVERB MODE
+
+Proverbs hmm ..
+Proverbs hmm ..
+Proverbs hmm ..
+Proverbs hmm ..
+JOKE MODE
+
+PROVERB MODE
+
+^Cloop-depaulsecure-235-12:JokeServer mohammedabdulkadir$
+
+JokeClient:
+
+loop-depaulsecure-235-12:JokeServer mohammedabdulkadir$ java JokeClient
+Mohammed's Joke's Client, 1.8 .
+
+using server: localhost, port: 4545
+Please enter your name with no spaces:
+Mohammed
+Hit 'Enter' to get a new joke or proverb or type 'quit' to end:
+Joke or Proverb requested
+(Mohammed)JA = What do you call cheese that's not yours? .... its nacho cheese
+Hit 'Enter' to get a new joke or proverb or type 'quit' to end:
+Joke or Proverb requested
+(Mohammed)JB = what do you call a candle in a suit of armour? ... A knight light
+Hit 'Enter' to get a new joke or proverb or type 'quit' to end:
+Joke or Proverb requested
+(Mohammed)JC = Two drums and a cymbal fall off a cliff ... Ba dum Tish!
+Hit 'Enter' to get a new joke or proverb or type 'quit' to end:
+Joke or Proverb requested
+(Mohammed)JD = Why did the policeman smell bad? ... He was on duty
+>>> JOKE CYCLE COMPLETED
+Hit 'Enter' to get a new joke or proverb or type 'quit' to end:
+Joke or Proverb requested
+(Mohammed)PA = I do not fear computers. I fear lack of them - Isaac Asimov
+Hit 'Enter' to get a new joke or proverb or type 'quit' to end:
+Joke or Proverb requested
+(Mohammed)PB = Computer Science is no more about computers than astronomy is about telescopes- Edsger W. Dijkstra
+Hit 'Enter' to get a new joke or proverb or type 'quit' to end:
+Joke or Proverb requested
+(Mohammed)PC = You miss 100% of the shots you never took - Micheal G Scott
+Hit 'Enter' to get a new joke or proverb or type 'quit' to end:
+Joke or Proverb requested
+(Mohammed)PD = The computers was born to solve problems that did not exist before. - Bill Gates
+>>> PROVERB CYCLE COMPLETED
+Hit 'Enter' to get a new joke or proverb or type 'quit' to end: quit
+User cancelled ... Good Bye!
+loop-depaulsecure-235-12:JokeServer mohammedabdulkadir$
+
+
+JokeClientAdmin:
+
+loop-depaulsecure-235-12:JokeServer mohammedabdulkadir$ java JokeClientAdmin
+Mohammed's Joke's Client Admin, 1.8 .
+
+using server: localhost, port: 5050
+Hit Enter to switch between Proverb and Joke Mode - or type 'quit' to end session:
+Hit Enter to switch between Proverb and Joke Mode - or type 'quit' to end session:
+Hit Enter to switch between Proverb and Joke Mode - or type 'quit' to end session:
+Hit Enter to switch between Proverb and Joke Mode - or type 'quit' to end session: quit
+User cancelled ... Good Bye!
