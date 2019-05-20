@@ -1,0 +1,23 @@
+/** Mohammed A
+*
+* Console dump traversing through directories.
+* serverlog.txt
+*/
+
+
+loop-248-223:MyWebserver mohammedabdulkadir$ java MyWebServer
+Mohammed's WebServer starting up, listening at port 2540.
+
+/
+/addnums.html
+/cgi/addnums.fake-cgi?person=Mohammed&num1=4&num2=5
+/cat.html
+/http-streams.txt
+/sub-a/
+/sub-a/sub-b/
+/sub-a/sub-b/dog.txt
+/sub-a/sub-b/cat.html
+/dog.txt
+not found
+/checklist-mywebserver.html
+^Cloop-248-223:MyWebserver mohammedabdulkadir$ 

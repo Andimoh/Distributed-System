@@ -1,0 +1,105 @@
+/* Mohammed Abdulkadir
+* log files from listener console and Client Wireshark */
+
+//MyListener
+//captured data from MyLisener.java 
+
+loop-248-65:My Webserver mohammedabdulkadir$ java MyListener
+Mohammed's Port listener running at 2540.
+
+GET /dog.txt HTTP/1.1
+Host: localhost:2540
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+Second run cat.html
+
+GET /cat.html HTTP/1.1
+Host: localhost:2540
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1 
+
+//MyLister Addnums form capture
+
+loop-depaulsecure-199-174:My Webserver mohammedabdulkadir$ java MyListener
+Mohammed's Port listener running at 2540.
+
+GET /cgi/addnums.fake-cgi?person=Mohammed&num1=2&num2=5 HTTP/1.1
+Host: localhost:2540
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+//WiresHark MyTelnet Captures
+//captured data from Wireshark for TelnetClient 
+
+
+250 11:45:05.155389 75.102.248.65	216.220.180.148	HTTP	530	GET /elliott/dog.txt HTTP/1.1 
+
+Frame 250: 530 bytes on wire (4240 bits), 530 bytes captured (4240 bits) on interface 0
+Ethernet II, Src: Apple_a8:4c:aa (8c:85:90:a8:4c:aa), Dst: JuniperN_28:17:f0 (3c:94:d5:28:17:f0)
+Internet Protocol Version 4, Src: 75.102.248.65, Dst: 216.220.180.148
+Transmission Control Protocol, Src Port: 51255, Dst Port: 80, Seq: 1, Ack: 1, Len: 464
+Hypertext Transfer Protocol
+    GET /elliott/dog.txt HTTP/1.1\r\n
+    Host: condor.depaul.edu\r\n
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0\r\n
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\n
+    Accept-Language: en-US,en;q=0.5\r\n
+    Accept-Encoding: gzip, deflate\r\n
+    Connection: keep-alive\r\n
+    Upgrade-Insecure-Requests: 1\r\n
+    If-Modified-Since: Wed, 07 Oct 2015 20:29:55 GMT\r\n
+    If-None-Match: "8a1bfc-30-521899bff76c0"\r\n
+    Cache-Control: max-age=0\r\n
+    \r\n
+    [Full request URI: http://condor.depaul.edu/elliott/dog.txt]
+    [HTTP request 1/1]
+    [Response in frame: 252]
+
+Frame 266: 216 bytes on wire (1728 bits), 216 bytes captured (1728 bits) on interface 0
+Ethernet II, Src: JuniperN_28:17:f0 (3c:94:d5:28:17:f0), Dst: Apple_a8:4c:aa (8c:85:90:a8:4c:aa)
+Internet Protocol Version 4, Src: 216.220.180.148, Dst: 75.102.248.65
+Transmission Control Protocol, Src Port: 80, Dst Port: 51256, Seq: 1, Ack: 465, Len: 150
+    Source Port: 80
+    Destination Port: 51256
+    [Stream index: 20]
+    [TCP Segment Len: 150]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 151    (relative sequence number)]
+    Acknowledgment number: 465    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+    Window size value: 54
+    [Calculated window size: 6912]
+    [Window size scaling factor: 128]
+    Checksum: 0x2c2c [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (150 bytes)
+Hypertext Transfer Protocol
+    HTTP/1.1 304 Not Modified\r\n
+    Date: Mon, 29 Apr 2019 16:45:06 GMT\r\n
+    Server: Apache/2.2.3 (Red Hat)\r\n
+    Connection: close\r\n
+    ETag: "8a1bfc-30-521899bff76c0"\r\n
+    \r\n
+    [HTTP response 1/1]
+    [Time since request: 0.002676000 seconds]
+    [Request in frame: 264]
+    [Request URI: http://condor.depaul.edu/elliott/dog.txt]
+
